@@ -32,7 +32,7 @@ vn = MyVanna(config={
     "temperature": 0.7
 })
 
-vn.connect_to_postgres(host='localhost', dbname='testdb', user='postgres', password='password', port=5432)
+vn.connect_to_postgres(host='localhost', dbname='testdb', user='postgres', password='Beast@0987', port=5432)
 # Train and prompt as usual
 vn.train(ddl="CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), city VARCHAR(100), purchases INT);")
 vn.train(question= "Show me details of Alice", sql="select * from customers where name='Alice'")
