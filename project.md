@@ -218,7 +218,7 @@ import psycopg2
 DB_CONFIG = {
     'dbname': 'pharma_db',
     'user': 'postgres',
-    'password': 'Beast@0987',
+    'password': 'password',
     'host': 'localhost',
     'port': '5432'
 }
